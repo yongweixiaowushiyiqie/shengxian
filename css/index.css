@@ -1,0 +1,599 @@
+/*
+* @Author: HP-007
+* @Date:   2018-02-06 09:27:05
+* @Last Modified by:   HP-007
+* @Last Modified time: 2018-02-24 22:35:49
+*/
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body,html{
+	width: 100%;
+	overflow-x: hidden;
+	font-family: "苹方"；
+	background: #fff;
+}
+input{
+	outline: none;
+}
+.topTab{
+	width: 100%;
+	height: 0.88rem;
+	background: -webkit-linear-gradient(left,#f5662e,#f58635);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	margin: 0 auto;
+	/* 定位中才遇到层级层级从1到999，一般比1大就好 */
+	z-index: 10;
+}
+.topTab .position img{
+	width: 0.88rem;
+	height: 0.88rem;
+	top: 0.33rem;
+	left: 0.3rem;
+	bottom: 0.25rem;
+	float: left;
+}
+.topTab .searchBox{
+	width: 4.49rem;
+	height: 0.4rem;
+	/* display: block; */
+	float: left;
+	border-radius: 0.3rem;
+	border: 0rem solid #fff;
+	margin-top: 0.23rem;
+	padding-left: 0.49rem;
+	box-sizing: border-box;
+	/* position: absolute; */
+}
+/* 选择页面中ingput的placeholder属性 */
+::-webkit-input-placeholder{
+	color: #ff7917;
+}
+.topTab .searchBox img{
+	width: 0.27rem;
+	height: 0.25rem;
+	top: 0.3rem;
+	left: 1rem;
+	bottom: 0.37rem;
+	position: absolute;
+}
+.topTab .qiandao img{
+	width: 0.88rem;
+	height: 0.88rem;
+	top: 0.07rem;
+	left: 5.92rem;
+	bottom: 0.37rem;
+	float: left;
+	position: absolute;
+}
+.topTab .mess img{
+	width: 0.88rem;
+	height: 0.88rem;
+	top: 0.07rem;
+	left: 6.6rem;
+	bottom: 0.37rem;
+	position: absolute;
+}
+.banner{
+	width:100%;
+	height: 3.33rem;
+	margin-top: 1.11rem;
+	/* position: relative; */
+}
+.banner img{
+	width: 100%;
+	height: 3.33rem;
+}
+.banner .bannerDot{
+	width: 0.58rem;
+	height: 0.15rem;
+	/* background: red; */
+	top: 2.90rem;
+	right: 3.26rem;
+	position: absolute;
+}
+
+.banner .swiper-pagination-bullet{
+	width: 0.12rem;
+	height: 0.12rem;
+	background: #72ab47;
+}
+.rukou{
+	width:7.02rem;
+	height: 2rem;
+	border-radius: 0.1rem;
+	background: #fff;
+	margin-top: -0.1rem;
+	margin-left: 0.24rem;
+	box-shadow: 0 0.15rem 30rem rgba(0, 0, 0, 0.21);
+	overflow: hidden;
+}
+.rukou .tubiao{
+	margin-left: 0.45rem;
+	margin-top: 0.22rem;
+}
+.rukou .tubiao img{
+	width: 1.42rem;
+	height: 1.42rem;
+	float: left;
+	margin-right: 0.15rem;
+}
+.rukou .text{
+	width: 100%;
+	height: 0.86rem;
+	margin-top: -0.1rem;
+	margin-left: 0.22rem;
+	float: left;
+}
+.rukou .text a{
+	font-size: 0.24rem;
+	color: #2a2e36;
+	display: block;
+	text-align: center;
+	float: left; 
+	margin-right: 0.65rem;
+	margin-bottom: 0.22rem;
+}
+.rukou .text a:nth-child(1){
+	margin-left: 0.4rem;
+}
+.rukou .text a:nth-child(4){
+	margin-right: 0rem;
+}
+.guanggao{
+	margin-top: -0.43rem;
+	margin-left: 0.14rem;
+}
+.guanggao img{
+	width: 7.2rem;
+	height: 3.02rem;
+}
+.biaoti{
+	width: 2.94rem;
+	height: 0.62rem;
+	/* background: red; */
+	margin-top: -0.52rem;
+	margin-left: 0.24rem;
+	float: left;
+}
+.biaoti .xian{
+	width: 0.46rem;
+	height: 0.02rem;
+	background: #ff5750;
+	margin-top: 0.05rem;
+	float: left;
+}
+.biaoti .xian1{
+	width: 0.12rem;
+	height: 0.02rem;
+	background: #ff5750;
+	margin-left: 0.08rem;
+	margin-top: 0.05rem;
+	float: left;
+}
+.biaoti .yuan{
+	width: 0.06rem;
+	height: 0.06rem;
+	border-radius: 50%;
+	border: 0.02rem solid #ff5750;
+	float: left;
+	margin-top: -0.6rem;
+	margin-left: 0.5rem;
+}
+.biaoti .heizhong{
+	font-size: 0.26rem;
+	color: #333333;
+	float: left;
+}
+.biaoti .hongzhong{
+	font-size: 0.26rem;
+	color: #ff5750;
+	float: left;
+}
+.biaoti .ying{
+	font-size: 0.2rem;
+	color: #333333;
+	font-weight: bold;
+	font-family: San Francisco Displaye;
+	margin-top: 0.35rem;
+}
+.shangpin{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	margin-bottom: 1.22rem;
+}
+.shangpin .list{
+	width: 7.02rem;
+	height: 2rem;
+	background: #fff;
+	border-radius: 0.1rem;
+	box-shadow: 0 0.05rem 20rem rgba(0, 0, 0, 0.08);
+	margin-top: 0.25rem;
+	margin-left: 0.24rem;
+}
+.shangpin .list .left{
+	width: 1.82rem;
+	height: 1.6rem;
+	background-image: url('../img/shpuye-shangping-mangguo@2x.png');
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position:0.1rem 0.1rem;
+}
+.shangpin .list .right .title{
+	font-size: 0.26rem;
+	color: #2a2e36;
+	float: left;
+	margin-left: 2.2rem;
+	margin-top: -1.3rem;
+}	
+.shangpin .list .right .xian{
+	width: 0.46rem;
+	height: 0.02rem;
+	background: #ff5750;
+	margin-top: -0.9rem;
+	margin-left: 2.2rem;
+	float: left;
+}
+.shangpin .list .right .xian1{
+	width: 0.12rem;
+	height: 0.02rem;
+	background: #ff5750;
+	margin-top: -0.9rem;
+	margin-left: 2.68rem;
+	float: left;
+}
+.shangpin .list .right .des{
+	font-size: 0.22rem;
+	color: #ff825c;
+	float: left;
+	margin-left: 2.2rem;
+	margin-top: -0.8rem;
+}
+.shangpin .list .right .price{
+	font-size: 0.26rem;
+	color: #ff825c;
+	font-family: Arvo;
+	float: left;
+	margin-left: 2.2rem;
+	margin-top: -0.4rem;
+}
+.shangpin .list .right .chandi{
+	font-size: 0.2rem;
+	color: #cbcbcb;
+	float: left;
+	margin-left: 2.2rem;
+	/* margin-top: -0.01rem; */
+}	
+.shangpin .list .right .yishou{
+	font-size: 0.2rem;
+	color: #ff825c;
+	float: left;
+	margin-left: 6rem;
+	margin-top: -1.5rem;
+	font-weight: 500;
+}
+.shangpin .list .right .qianggou{
+	width: 1.04rem;
+	height: 0.34rem;
+	font-size: 0.2rem;
+	color: #fff;
+	float: left;
+	margin-left: 5.8rem;
+	margin-top: -0.4rem;
+	font-weight: 500;
+	text-align: center;
+	line-height: 0.34rem;
+	border: 0.01rem solid #fff;
+	border-radius: 0.1rem;
+	background:  #ff6428;
+	box-shadow:0 0.2rem 30rem rgba(0, 0, 0, 0.2);
+}
+.shangpin .list .left1{
+	width: 1.6rem;
+	height: 2rem;
+	background-image: url('../img/shouye-shangpin-yingtao@2x.png');
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position:0.08rem 0.06rem;
+}
+.shangpin .list .right .title1{
+	font-size: 0.26rem;
+	color: #2a2e36;
+	float: left;
+	margin-left: 2.2rem;
+	margin-top: -1.7rem;
+}
+.shangpin .list .right .des .des1{
+	width: 0.69rem;
+	height: 0.28rem;
+	font-size: 0.2rem;
+	color: #ff825c;
+	float: left;
+	text-align: center;
+	line-height: 0.28rem;
+	border: 0.01rem solid#fca44d;
+	border-radius: 0.1rem;
+	/* margin-left: 1.8rem; */
+	margin-top: -2.08em;
+}
+.shangpin .list .right .des .des2{
+	font-size: 0.22rem;
+	color: #ff825c;
+	float: left;
+	margin-left: 0.8rem;
+	margin-top: -0.4rem;
+}
+.shangpin .list .right .price1{
+	font-size: 0.26rem;
+	color: #ff825c;
+	font-family: Arvo;
+	float: left;
+	margin-left: 2.2rem;
+	margin-top: -0.8rem;
+}
+.shangpin .list .right .chandi1{
+	font-size: 0.2rem;
+	color: #cbcbcb;
+	float: left;
+	margin-left: 2.2rem;
+	margin-top: -0.4rem;
+}	
+.shangpin .list .right .qianggou1{
+	width: 1.04rem;
+	height: 0.34rem;
+	font-size: 0.2rem;
+	color: #fff;
+	float: left;
+	margin-left: 5.8rem;
+	margin-top: -0.5rem;
+	font-weight: 500;
+	text-align: center;
+	line-height: 0.34rem;
+	border: 0.01rem solid #fff;
+	border-radius: 0.1rem;
+	background:  #ff6428;
+	box-shadow:0 0.2rem 30rem rgba(0, 0, 0, 0.2);
+}
+.shangpin .list .left2{
+	width: 3rem;
+	height: 2rem;
+	background-image: url('../img/shouye-shangping-nai@2x.png');
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position:-0.7rem 0.06rem;
+	position: relative;
+}	
+.shangpin .list .left2 img{
+	width: 0.47rem;
+	height: 0.69rem;
+	left: 0.11rem;
+	position: absolute;
+}
+.shangpin .list .right .title2{
+	font-size: 0.26rem;
+	color: #2a2e36;
+	float: left;
+	margin-left: 2.2rem;
+	margin-top: -1.8rem;
+}
+.shangpin .list .right .des2{
+	font-size: 0.22rem;
+	color: #ff825c;
+	float: left;
+	margin-left: 2.2rem;
+	margin-top: -1.3rem;
+}
+.shangpin .list .right .price2{
+	font-size: 0.26rem;
+	color: #ff825c;
+	font-family: Arvo;
+	float: left;
+	margin-left: 2.2rem;
+	margin-top: -0.8rem;
+}
+.shangpin .list .right .chandi2{
+	font-size: 0.2rem;
+	color: #cbcbcb;
+	float: left;
+	margin-left: 2.2rem;
+	margin-top: -0.4rem;
+}
+.shangpin .list .right .qianggou2{
+	width: 1.04rem;
+	height: 0.34rem;
+	font-size: 0.2rem;
+	color: #fff;
+	float: left;
+	margin-left: 5.8rem;
+	margin-top: -0.5rem;
+	font-weight: 500;
+	text-align: center;
+	line-height: 0.34rem;
+	border: 0.01rem solid #fff;
+	border-radius: 0.1rem;
+	background:  #ff6428;
+	box-shadow:0 0.2rem 30rem rgba(0, 0, 0, 0.2);
+}
+.shangpin .list .left3{
+	width: 1.8rem;
+	height: 1.8rem;
+	background-image: url('../img/shouye-shangping-mihoutao@2x.png');
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position:-0.05rem 0.06rem;
+	position: relative;
+}	
+.shangpin .list .right .title3{
+	font-size: 0.26rem;
+	color: #2a2e36;
+	float: left;
+	margin-left: 2.2rem;
+	margin-top: -1.6rem;
+}
+.shangpin .list .right .des .des3{
+	width: 0.69rem;
+	height: 0.28rem;
+	font-size: 0.2rem;
+	color: #ff825c;
+	float: left;
+	text-align: center;
+	line-height: 0.28rem;
+	border: 0.01rem solid#fca44d;
+	border-radius: 0.1rem;
+	/* margin-left: 1.8rem; */
+	margin-top: -1.6em;
+}
+.shangpin .list .right .des .des4{
+	font-size: 0.22rem;
+	color: #ff825c;
+	float: left;
+	margin-left: 0.8rem;
+	margin-top: -0.3rem;
+}
+.shangpin .list .right .price3{
+	font-size: 0.26rem;
+	color: #ff825c;
+	font-family: Arvo;
+	float: left;
+	margin-left: 2.2rem;
+	margin-top: -0.7rem;
+}
+.shangpin .list .right .chandi3{
+	font-size: 0.2rem;
+	color: #cbcbcb;
+	float: left;
+	margin-left: 2.2rem;
+	margin-top: -0.3rem;
+}	
+.shangpin .list .right .qianggou3{
+	width: 1.04rem;
+	height: 0.34rem;
+	font-size: 0.2rem;
+	color: #fff;
+	float: left;
+	margin-left: 5.8rem;
+	margin-top: -0.4rem;
+	font-weight: 500;
+	text-align: center;
+	line-height: 0.34rem;
+	border: 0.01rem solid #fff;
+	border-radius: 0.1rem;
+	background:  #ff6428;
+	box-shadow:0 0.2rem 30rem rgba(0, 0, 0, 0.2);
+}
+.shangpin .list .left4{
+	width: 2rem;
+	height: 1.8rem;
+	/* margin-top: 0.3rem; */
+	background-image: url('../img/shouye-shangping-xihongshi@2x.png');
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position:0rem 0.1rem;
+	position: relative;
+}
+.shangpin .list .right .title4{
+	font-size: 0.26rem;
+	color: #2a2e36;
+	float: left;
+	margin-left: 2.2rem;
+	margin-top: -1.6rem;
+}
+.shangpin .list .right .des .des5{
+	width: 0.69rem;
+	height: 0.28rem;
+	font-size: 0.2rem;
+	color: #ff825c;
+	float: left;
+	text-align: center;
+	line-height: 0.28rem;
+	border: 0.01rem solid#fca44d;
+	border-radius: 0.1rem;
+	/* margin-left: 1.8rem; */
+	margin-top: -1.6em;
+}
+.shangpin .list .right .des .des6{
+	font-size: 0.22rem;
+	color: #ff825c;
+	float: left;
+	margin-left: 0.8rem;
+	margin-top: -0.3rem;
+}
+.shangpin .list .right .price4{
+	font-size: 0.26rem;
+	color: #ff825c;
+	font-family: Arvo;
+	float: left;
+	margin-left: 2.2rem;
+	margin-top: -0.7rem;
+}
+.shangpin .list .right .chandi4{
+	font-size: 0.2rem;
+	color: #cbcbcb;
+	float: left;
+	margin-left: 2.2rem;
+	margin-top: -0.2rem;
+}	
+.shangpin .list .right .qianggou4{
+	width: 1.04rem;
+	height: 0.34rem;
+	font-size: 0.2rem;
+	color: #fff;
+	float: left;
+	margin-left: 5.8rem;
+	margin-top: -0.3rem;
+	font-weight: 500;
+	text-align: center;
+	line-height: 0.34rem;
+	border: 0.01rem solid #fff;
+	border-radius: 0.1rem;
+	background:  #ff6428;
+	box-shadow:0 0.2rem 30rem rgba(0, 0, 0, 0.2);
+}
+.bottomTab{
+	width: 100%;
+	height: 0.98rem;
+	background:#fff;
+	position: fixed;
+	bottom:0rem;
+	box-shadow:0 0.2rem 30rem rgba(0, 0, 0, 0.3)  
+}
+.bottomTab .box{
+	width: 25%;
+	height: 100%;
+	float: left;
+	box-sizing:border-box;
+	text-align: center;
+	line-height: 0.45rem; 
+}
+.bottomTab .box img{
+	width: 0.88rem;
+	height: 0.88rem;
+}	
+.bottomTab .box .zi{
+	width: 1.38rem;
+	height: 0.45rem;
+	font-size: 0.2rem;
+	color: #a3a3a3;
+	text-align: center;
+	line-height: 0.45rem; 
+	margin-top: -0.3rem;
+	margin-left: 0.2rem;
+}	
+.bottomTab .box .zi1{
+	width: 1.38rem;
+	height: 0.45rem;
+	font-size: 0.2rem;
+	color: #fb5f4f;
+	text-align: center;
+	line-height: 0.45rem; 
+	margin-top: -0.3rem;
+	margin-left: 0.2rem;
+}		

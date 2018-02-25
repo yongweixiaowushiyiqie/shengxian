@@ -1,0 +1,350 @@
+/*
+* @Author: HP-007
+* @Date:   2018-02-24 11:49:51
+* @Last Modified by:   HP-007
+* @Last Modified time: 2018-02-25 11:03:59
+*/
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body,html{
+	width: 100%;
+	overflow-x: hidden;
+	font-family: "苹方"；
+}
+input{
+	outline: none;
+}
+.beijing img{
+	width: 7.5rem;
+	height: 13.34rem;
+}
+.topTab{
+	width: 100%;
+	height: 0.88rem;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	margin: 0 auto;
+	/* 定位中才遇到层级层级从1到999，一般比1大就好 */
+	z-index: 10;
+}
+.topTab .quxiao{
+	width: 1.35rem;
+	height: 0.44rem;
+	border: 0.03rem dotted#fff;
+	border-radius: 0.22rem;
+	font-size: 0.24rem;
+	color: #fff;
+	margin-top: 0.4rem;
+	margin-left: -0.4rem;
+	text-align: center;
+	line-height: 0.44rem;
+	float: left;
+}
+.topTab .dabiaoti{
+	font-size: 0.3rem;
+	color: #fff;
+	margin-left: 3.14rem;
+	margin-top: 0.4rem;
+}
+.topTab .denglu{
+	width: 1.35rem;
+	height: 0.44rem;
+	border: 0.03rem dotted#fff;
+	border-radius: 0.22rem;
+	font-size: 0.24rem;
+	color: #507348;
+	margin-top: -0.5rem;
+	margin-left:6.5rem;
+	text-align: center;
+	line-height: 0.44rem;
+	float: left;
+}
+.shangtu img{
+	width: 3.15rem;
+	height: 3.51rem;
+	margin-top: -11.5rem;
+	margin-left: -0.8rem;
+	position: absolute;
+}
+.neirong .baidi img{
+	width: 6.14rem;
+	height: 8.89rem;
+	margin-top: -10.2rem;
+	margin-left: 0.61rem;
+	position: absolute;
+}
+.neirong .huan1 .da1{
+	width: 0.35rem;
+	height: 0.35rem;
+	background: #ffa55c;
+	border: 0.01rem solid#fff;
+	box-shadow: 0 0.15rem 0.3rem rgba(255, 165, 92, 0.2);
+	border-radius: 50%;
+	position: absolute;
+	margin-top: -8.6rem;
+	margin-left: 1.8rem;
+}
+.neirong .huan1 .xiao1{
+	width: 0.12rem;
+	height: 0.12rem;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	margin-top: -8.47rem;
+	margin-left: 1.92rem;
+}
+.neirong .huan1 .zi1{
+	font-size: 0.2rem;
+	color: #ffb379;
+	position: absolute;
+	margin-top: -8rem;
+	margin-left: 1.83rem;
+}
+.neirong .huan1 .xian1 img{
+	width: 0.54rem;
+	height: 0.05rem;
+	position: absolute;
+	margin-top: -8.47rem;
+	margin-left: 2.3rem;
+}
+.neirong .huan2 .da2{
+	width: 0.35rem;
+	height: 0.35rem;
+	background: #cfcfcf;
+	border: 0.01rem solid#fff;
+	border-radius: 50%;
+	box-shadow: 0 0.15rem 0.3rem rgba(200, 200, 200, 0.2);
+	position: absolute;
+	margin-top: -8.6rem;
+	margin-left: 3rem;
+}
+.neirong .huan2 .xiao2{
+	width: 0.12rem;
+	height: 0.12rem;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	margin-top: -8.47rem;
+	margin-left: 3.12rem;
+}
+.neirong .huan2 .zi2{
+	font-size: 0.2rem;
+	color: #cfcfcf;
+	position: absolute;
+	margin-top: -8rem;
+	margin-left: 3rem;
+}
+.neirong .huan2 .xian2 img{
+	width: 0.54rem;
+	height: 0.05rem;
+	position: absolute;
+	margin-top: -8.47rem;
+	margin-left: 3.5rem;
+}
+.neirong .huan3 .da3{
+	width: 0.35rem;
+	height: 0.35rem;
+	background: #cfcfcf;
+	border: 0.01rem solid#fff;
+	border-radius: 50%;
+	box-shadow: 0 0.15rem 0.3rem rgba(200, 200, 200, 0.2);
+	position: absolute;
+	margin-top: -8.6rem;
+	margin-left: 4.2rem;
+}
+.neirong .huan3 .xiao3{
+	width: 0.12rem;
+	height: 0.12rem;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	margin-top: -8.47rem;
+	margin-left: 4.32rem;
+}
+.neirong .huan3 .zi3{
+	font-size: 0.2rem;
+	color: #cfcfcf;
+	position: absolute;
+	margin-top: -8rem;
+	margin-left: 4.2rem;
+}
+.neirong .huan3 .xian3 img{
+	width: 0.54rem;
+	height: 0.05rem;
+	position: absolute;
+	margin-top: -8.47rem;
+	margin-left: 4.7rem;
+}
+.neirong .zhanghao img{
+	width: 0.53rem;
+	height: 0.62rem;
+	margin-top:-7.8rem;
+	margin-left: 1.1rem;
+	position: absolute;
+}
+.neirong .box1{
+	width: 5.27rem;
+	height: 0.89rem;
+	border: 0rem solid #fff;
+	border-radius: 0.1rem;
+	background: #fff;
+	box-shadow: 0 0.15rem 0.3rem rgba(117, 117, 117, 0.15);
+	position: absolute;
+	margin-top: -8rem;
+	margin-left: 1.04rem;
+}
+::-webkit-input-placeholder{
+	font-size: 0.3rem;
+	color: #ffa257;
+	padding-left:1.4rem;
+	position: absolute;
+}
+
+.neirong .shi img{
+	width: 0.05rem;
+	height: 0.6rem;
+	margin-top:-7.8rem;
+	margin-left: 1.8rem;
+	position: absolute;
+}
+.neirong .fuhao img{
+	width: 0.27rem;
+	height: 0.27rem;
+	position: absolute;
+	margin-left:5.8rem;
+	margin-top:-7.6rem;
+}
+.neirong .box2{
+	width: 5.27rem;
+	height: 0.89rem;
+	border: 0rem solid #fff;
+	border-radius: 0.1rem;
+	background: #fff;
+	box-shadow: 0 0.15rem 0.3rem rgba(117, 117, 117, 0.15);
+	position: absolute;
+	margin-top: -6.6rem;
+	margin-left: 1.04rem;
+}
+::-webkit-input-placeholder{
+	font-size: 0.3rem;
+	color: #ffa257;
+	padding-left:1.4rem;
+	position: absolute;
+}
+.neirong .zhanghao1 img{
+	width: 0.53rem;
+	height: 0.62rem;
+	margin-top:-6.5rem;
+	margin-left: 1.1rem;
+	position: absolute;
+}
+.neirong .shi1 img{
+	width: 0.05rem;
+	height: 0.6rem;
+	margin-top:-6.4rem;
+	margin-left:1.8rem;
+	position: absolute;
+}
+.neirong .fuhao1 img{
+	width: 0.36rem;
+	height: 0.16rem;
+	position: absolute;
+	margin-left: 5.8rem;
+	margin-top:-6.2rem;
+}
+.neirong .box3{
+	width: 5.27rem;
+	height: 0.89rem;
+	border: 0rem solid #fff;
+	border-radius: 0.1rem;
+	background: #fff;
+	box-shadow: 0 0.15rem 0.3rem rgba(117, 117, 117, 0.15);
+	position: absolute;
+	margin-top: -5.1rem;
+	margin-left: 1.04rem;
+}
+.neirong .zhanghao2 img{
+	width: 0.53rem;
+	height: 0.62rem;
+	margin-top:-5rem;
+	margin-left: 1.1rem;
+	position: absolute;
+}
+.neirong .shi2 img{
+	width: 0.05rem;
+	height: 0.6rem;
+	margin-top:-5rem;
+	margin-left: 1.8rem;
+	position: absolute;
+}
+.neirong .fuhao2 img{
+	width: 0.36rem;
+	height: 0.16rem;
+	position: absolute;
+	margin-left: 5.8rem;
+	margin-top:-4.8rem;
+}
+.neirong .tongyi{
+	font-size: 0.24rem;
+	color: #9b9b9b;
+	position: absolute;
+	margin-top: -4rem;
+	margin-left: 1.1rem;
+}
+.neirong .btn{
+	width: 5.13rem;
+	height: 0.88rem;
+	border-radius: 0.44rem;
+	background: #ffa257;
+	position: absolute;
+	margin-top: -3rem;
+	margin-left: 1.1rem;
+}
+.neirong .btn .zuo{
+	width: 0.09rem;
+	height: 0.09rem;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	margin-top: 0.4rem;
+	margin-left: 0.3rem;
+}
+.neirong .btn .zi{
+	font-size: 0.32rem;
+	font-family: 方正粗圆繁体;
+	color: #fff;
+	line-height: 0.88rem;
+	position: absolute;
+	margin-left: 1.8rem;
+}
+.neirong .btn .yingwen{
+	font-size: 0.28rem;
+	font-family: San Francisco Display;
+	color: #ffe4da;
+	position: absolute;
+	margin-top: 0.5rem;
+	margin-left: 1.8rem;
+}
+.neirong .btn .you{
+	width: 0.09rem;
+	height: 0.09rem;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	margin-top: 0.4rem;
+	margin-left: 4.7rem;
+}
+.xiatu img{
+	width:1.5rem;
+	height: 2rem;
+	margin-top: -2.24rem;
+	margin-left:6rem;
+	position: absolute;
+}

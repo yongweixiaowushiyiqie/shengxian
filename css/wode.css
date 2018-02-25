@@ -1,0 +1,443 @@
+/*
+* @Author: HP-007
+* @Date:   2018-02-24 11:50:29
+* @Last Modified by:   HP-007
+* @Last Modified time: 2018-02-24 22:42:48
+*/
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body,html{
+	width: 100%;
+	overflow-x: hidden;
+	font-family: "苹方"；
+}
+input{
+	outline: none;
+}
+.topTab{
+	width: 100%;
+	height: 0.88rem;
+	background: -webkit-linear-gradient(left,#f5662e,#f58635);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	margin: 0 auto;
+	/* 定位中才遇到层级层级从1到999，一般比1大就好 */
+	box-shadow: 0 0.15rem 0.3rem rgba(255, 182, 86, 0.2);
+	z-index: 10;
+}
+.topTab .fanhui img{
+	width: 0.88rem;
+	height: 0.88rem;
+	top: 0.33rem;
+	left: 0.3rem;
+	bottom: 0.25rem;
+	float: left;
+}
+.topTab .dabiaoti{
+	font-size: 0.3rem;
+	color: #fff;
+	margin-left: 3.14rem;
+	margin-top: 0.3rem;
+}
+.topTab .fenxiang img{
+	width: 0.88rem;
+	height: 0.88rem;
+	top: 0.07rem;
+	left: 5.92rem;
+	bottom: 0.37rem;
+	position: absolute;
+}
+.topTab .gengduo img{
+	width: 0.88rem;
+	height: 0.88rem;
+	top: 0.07rem;
+	left: 6.6rem;
+	bottom: 0.37rem;
+	position: absolute;
+}
+.box1{
+	width: 6.99rem;
+	height: 3.36rem;
+	background: #fff;
+	border-radius: 0.1rem;
+	box-shadow: 0 0.15rem 0.3rem rgba(255, 136, 89, 0.2);
+	margin-top: 1.24rem;
+	margin-left: 0.27rem;
+}
+.box1 .touxiang img{
+	width: 1.96rem;
+	height: 1.96rem;
+	position: absolute;
+	margin-left: 0.23rem;
+	margin-top: 0.49rem;
+}
+.box1 .title{
+	font-size: 0.3rem;
+	color: #ff884a;
+	position: absolute;
+	margin-top: 0.54rem;
+	margin-left: 2.6rem;
+}
+.box1 .xiangqing .yue img{
+	width: 0.4rem;
+	height: 0.4rem;
+	position: absolute;
+	margin-top: 1.33rem;
+	margin-left: 2.6rem;
+}
+.box1 .xiangqing .yue .zi1{
+	font-size: 0.2rem;
+	color: #373e45;
+	position: absolute;
+	margin-top: 1.8rem;
+	margin-left: 2.6rem;
+}
+.box1 .xiangqing .yue .jiage1{
+	font-size: 0.32rem;
+	color: #373e45;
+	position: absolute;
+	margin-top: 1.3rem;
+	margin-left: 3.1rem;
+}
+.box1 .xiangqing .youhui img{
+	width: 0.4rem;
+	height: 0.28rem;
+	position: absolute;
+	margin-top: 2.42rem;
+	margin-left: 2.6rem;
+}
+.box1 .xiangqing .youhui .zi2{
+	font-size: 0.2rem;
+	color: #373e45;
+	position: absolute;
+	margin-top: 2.8rem;
+	margin-left: 2.6rem;
+}
+.box1 .xiangqing .youhui .jiage2{
+	font-size: 0.32rem;
+	color: #373e45;
+	position: absolute;
+	margin-top: 2.3rem;
+	margin-left: 3.1rem;
+}
+.box1 .xiangqing .jifen img{
+	width: 0.4rem;
+	height: 0.41rem;
+	position: absolute;
+	margin-top: 1.33rem;
+	margin-left: 4.6rem;
+}
+.box1 .xiangqing .jifen .zi3{
+	font-size: 0.2rem;
+	color: #373e45;
+	position: absolute;
+	margin-top: 1.8rem;
+	margin-left: 4.6rem;
+}
+.box1 .xiangqing .jifen .jiage3{
+	font-size: 0.32rem;
+	color: #373e45;
+	position: absolute;
+	margin-top: 1.3rem;
+	margin-left: 5.1rem;
+}
+.box1 .xiangqing .hongbao img{
+	width: 0.4rem;
+	height: 0.41rem;
+	position: absolute;
+	margin-top: 2.42rem;
+	margin-left: 4.6rem;
+}
+.box1 .xiangqing .hongbao .zi4{
+	font-size: 0.2rem;
+	color: #373e45;
+	position: absolute;
+	margin-top: 2.8rem;
+	margin-left: 4.6rem;
+}
+.box1 .xiangqing .hongbao .jiage4{
+	font-size: 0.32rem;
+	color: #373e45;
+	position: absolute;
+	margin-top: 2.3rem;
+	margin-left: 5.1rem;
+}
+.box2{
+	width: 6.99rem;
+	height: 1.8rem;
+	background: #fff;
+	border-radius: 0.1rem;
+	box-shadow: 0 0.15rem 0.3rem rgba(255, 136, 89, 0.2);
+	margin-top: 0.64rem;
+	margin-left: 0.27rem;
+}
+.box2 .dingdanshang img{
+	width: 0.4rem;
+	height: 0.42rem;
+	margin-left: 0.17rem;
+	margin-top: 0rem;
+	position: absolute;
+}
+.box2 .dingdanshang .dan{
+	font-size: 0.26rem;
+	color: #474f57;
+	position: absolute;
+	margin-top: 0.01rem;
+	margin-left: 0.72rem;
+}
+.box2 .dingdanshang .chakan{
+	font-size: 0.24rem;
+	color: #a7abaf;
+	position: absolute;
+	margin-top: 0.01rem;
+	margin-left: 5.51rem;
+}
+.box2 .dingdanshang .jian img{
+	width: 0.14rem;
+	height: 0.22rem;
+	position: absolute;
+	margin-top: 0.08rem;
+	margin-left: 6.67rem;
+}
+.box2 .dingdanxia .fukuan img{
+	width: 0.32rem;
+	height: 0.33rem;
+	position: absolute;
+	margin-left: 0.3rem;
+	margin-top: 0.7rem;
+} 
+.box2 .dingdanxia .fukuan .zi1{
+	font-size: 0.22rem;
+	color: #25262c;
+	position: absolute;
+	margin-top: 1.16rem;
+	margin-left: 0.18rem;
+}
+.box2 .dingdanxia .fahuo img{
+	width: 0.33rem;
+	height: 0.25rem;
+	position: absolute;
+	margin-left: 1.80rem;
+	margin-top: 0.7rem;
+} 
+.box2 .dingdanxia .fahuo .zi2{
+	font-size: 0.22rem;
+	color: #25262c;
+	position: absolute;
+	margin-top: 1.16rem;
+	margin-left: 1.7rem;
+}
+.box2 .dingdanxia .peisong img{
+	width: 0.37rem;
+	height: 0.33rem;
+	position: absolute;
+	margin-left: 3.25rem;
+	margin-top: 0.7rem;
+} 
+.box2 .dingdanxia .peisong .zi3{
+	font-size: 0.22rem;
+	color: #25262c;
+	position: absolute;
+	margin-top: 1.16rem;
+	margin-left: 3.2rem;
+}
+.box2 .dingdanxia .pingjia img{
+	width: 0.35rem;
+	height: 0.33rem;
+	position: absolute;
+	margin-left:4.73rem;
+	margin-top: 0.7rem;
+} 
+.box2 .dingdanxia .pingjia .zi4{
+	font-size: 0.22rem;
+	color: #25262c;
+	position: absolute;
+	margin-top: 1.16rem;
+	margin-left:4.68rem;
+}
+.box2 .dingdanxia .tuikuan img{
+	width: 0.39rem;
+	height: 0.33rem;
+	position: absolute;
+	margin-left:6.16rem;
+	margin-top: 0.7rem;
+} 
+.box2 .dingdanxia .tuikuan .zi5{
+	font-size: 0.22rem;
+	color: #25262c;
+	position: absolute;
+	margin-top: 1.16rem;
+	margin-left:5.9rem;
+}
+.box3{
+	width: 6.99rem;
+	height:4.11rem;
+	background: #fff;
+	border-radius: 0.1rem;
+	box-shadow: 0 0.15rem 0.3rem rgba(255, 136, 89, 0.2);
+	margin-top: 0.9rem;
+	margin-left: 0.27rem;
+	margin-bottom: 1.43rem;
+}
+.box3 .biao1{
+	width: 6.68rem;
+	height: 0.88rem;
+	border-bottom: 0.01rem solid#f4f3f3;
+	position: absolute;
+	margin-left: 0.15rem;
+}
+.box3 .biao1 img{
+	width: 0.3rem;
+	height: 0.32rem;
+	position: absolute;
+	margin-left: 0.13rem;
+	margin-top: 0.34rem;
+}
+.box3 .biao1 .huiyuan{
+	font-size: 0.26rem;
+	color: #25262c;
+	margin-left:0.7rem;
+	margin-top: 0.34rem;
+	position: absolute;
+}
+.box3 .biao1 .lvjian img{
+	width: 0.17rem;
+	height: 0.25rem;
+	position: absolute;
+	margin-top: 0.39rem;
+	margin-left: 6.53rem;
+}
+.box3 .biao2{
+	width: 6.68rem;
+	height: 0.88rem;
+	border-bottom: 0.01rem solid#f4f3f3;
+	position: absolute;
+	margin-top: 0.88rem;
+	margin-left: 0.15rem;
+}
+.box3 .biao2 img{
+	width: 0.3rem;
+	height: 0.32rem;
+	position: absolute;
+	margin-left: 0.13rem;
+	margin-top: 0.34rem;
+}
+.box3 .biao2 .kefu{
+	font-size: 0.26rem;
+	color: #25262c;
+	margin-left:0.7rem;
+	margin-top: 0.34rem;
+	position: absolute;
+}
+.box3 .biao2 .lvjian1 img{
+	width: 0.17rem;
+	height: 0.25rem;
+	position: absolute;
+	margin-top: 0.39rem;
+	margin-left: 6.53rem;
+}
+.box3 .biao3{
+	width: 6.68rem;
+	height: 0.88rem;
+	border-bottom: 0.01rem solid#f4f3f3;
+	position: absolute;
+	margin-top: 1.76rem;
+	margin-left: 0.15rem;
+}
+.box3 .biao3 img{
+	width: 0.3rem;
+	height: 0.32rem;
+	position: absolute;
+	margin-left: 0.13rem;
+	margin-top: 0.34rem;
+}
+.box3 .biao3 .yijian{
+	font-size: 0.26rem;
+	color: #25262c;
+	margin-left:0.7rem;
+	margin-top: 0.34rem;
+	position: absolute;
+}
+.box3 .biao3 .lvjian2 img{
+	width: 0.17rem;
+	height: 0.25rem;
+	position: absolute;
+	margin-top: 0.39rem;
+	margin-left: 6.53rem;
+}
+.box3 .biao4{
+	width: 6.68rem;
+	height: 0.88rem;
+	position: absolute;
+	margin-top:2.64rem;
+	margin-left: 0.15rem;
+}
+.box3 .biao4 img{
+	width: 0.3rem;
+	height: 0.32rem;
+	position: absolute;
+	margin-left: 0.13rem;
+	margin-top: 0.34rem;
+}
+.box3 .biao4 .yijian{
+	font-size: 0.26rem;
+	color: #25262c;
+	margin-left:0.7rem;
+	margin-top: 0.34rem;
+	position: absolute;
+}
+.box3 .biao4 .lvjian3 img{
+	width: 0.17rem;
+	height: 0.25rem;
+	position: absolute;
+	margin-top: 0.39rem;
+	margin-left: 6.53rem;
+}
+.bottomTab{
+	width: 100%;
+	height: 0.98rem;
+	background:#fff;
+	position: fixed;
+	bottom:0rem;
+	box-shadow:0 0.2rem 30rem rgba(0, 0, 0, 0.3);
+}
+.bottomTab .box{
+	width: 25%;
+	height: 100%;
+	float: left;
+	box-sizing:border-box;
+	text-align: center;
+	line-height: 0.45rem; 
+}
+.bottomTab .box img{
+	width: 0.88rem;
+	height: 0.88rem;
+	/* float: left; */
+}	
+.bottomTab .box .zi{
+	width: 1.38rem;
+	height: 0.45rem;
+	font-size: 0.2rem;
+	color: #a3a3a3;
+	text-align: center;
+	line-height: 0.45rem; 
+	margin-top: -0.3rem;
+	margin-left: 0.2rem;
+}	
+.bottomTab .box .zi1{
+	width: 1.38rem;
+	height: 0.45rem;
+	font-size: 0.2rem;
+	color: #fb5f4f;
+	text-align: center;
+	line-height: 0.45rem; 
+	margin-top: -0.3rem;
+	margin-left: 0.2rem;
+}			
